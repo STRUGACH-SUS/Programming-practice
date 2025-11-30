@@ -1,8 +1,8 @@
-namespace GreatPractic;
+namespace GreatPractic;//Переименовать неймспейс
 
-public class PathToFile(string pathToFolder, string nameOfFile)
+public class PathToFile(string pathToFolder, string nameOfFile)// может осавить чисто методы // добавить описание классакм и методам с помощью summary
 {
-    public string FullPathToFile {get; set;} = CheckInputPathToFile(pathToFolder, nameOfFile);
+    public string FullPathToFile {get;} = CheckInputPathToFile(pathToFolder, nameOfFile);
     
     private static string CheckInputPathToFile(string pathToFolder,string nameOfFile)
     {
