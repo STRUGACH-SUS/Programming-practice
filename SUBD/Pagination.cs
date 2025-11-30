@@ -1,8 +1,8 @@
-namespace GreatPractic;
+namespace GreatPractic;//Переименовать неймспейс
 
-public class Pagination(int[] pagination)
+public class Pagination(int[] pagination)// может осавить чисто методы // добавить описание классакм и методам с помощью summary
 {
-    public int[] PaginationForFile {get; set;} = CheckInputPagination(pagination);
+    public int[] PaginationForFile {get;} = CheckInputPagination(pagination);
 
     private static int[] CheckInputPagination(int[] pagination)
     {
