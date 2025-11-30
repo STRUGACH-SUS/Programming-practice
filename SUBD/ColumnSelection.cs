@@ -1,8 +1,8 @@
-namespace GreatPractic;
+namespace GreatPractic;//Переименовать неймспейс
 
-public class ColumnSelection(string columnSelectoin,string[] selection)
+public class ColumnSelection(string columnSelectoin,string[] selection)// может осавить чисто методы // добавить описание классакм и методам с помощью summary
 {
-    public string [] ColumnSelectoin {get; set;} = CheckInputColumnSelection(columnSelectoin, selection);
+    public string [] ColumnSelectoin {get;} = CheckInputColumnSelection(columnSelectoin, selection);
     
     private static string [] CheckInputColumnSelection(string columnSelectoin,string[] selectoin)
     {
