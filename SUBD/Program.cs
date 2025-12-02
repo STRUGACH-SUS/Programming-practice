@@ -21,7 +21,7 @@ namespace GreatPractic//Переименовать неймспейс
             PathToFile pathToFile = new PathToFile(pathToFolder, nameOfFile);
             
 
-            Console.WriteLine("Введите начальную и конечную строчку (пример: 10,20 ): ");
+            Console.WriteLine("Введите начальную и конечную строчку (пример: 10,20 ): ");// поменять на прочерк
             int[] pagination = (Console.ReadLine()!.Split(',')).Select(int.Parse).ToArray(); //Дописать проверку на последние строки //Сделать отдельным калссом для принятий значений
             Pagination pagination1 = new Pagination(pagination);
 
